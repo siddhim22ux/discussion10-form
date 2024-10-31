@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Form</title>
-  <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
+
 <body>
 
     <form action="https://formspree.io/f/xzzbdnzw" method="POST">
         <fieldset>
             <legend>Form</legend>
+
             <label for="first-name">First Name:</label>
-            <input type="text" id="first-name"  required>
+            <input type="text" placeholder="Enter your name here" id="first-name" name="name" required>
 
             <label for="last-name">Last Name:</label>
-            <input type="text"  name="last-name" required>
+            <input type="text" placeholder="Enter your last name here" id="last-name" name="last-name" required>
 
             <label for="program">Program: </label>
-            <input type="text" id="program" name="program">
+            <input type="text" id="program" name="program" placeholder="Enter your program name">
 
             <div class="radio-group">
                 <p>Available Time for Picking Up Grocery:</p>
                 <input type="radio" id="morning" name="available-time" value="morning">
-                <label>Morning</label>
+                <label for ="morning">Morning</label>
 
                 <input type="radio" id="afternoon" name="available-time" value="afternoon">
                 <label for="afternoon">Afternoon</label>
@@ -40,4 +43,5 @@
         </fieldset>
     </form>
 </body>
+
 </html>
